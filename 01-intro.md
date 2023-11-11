@@ -1,6 +1,6 @@
 ---
 title: SSH keys
-teaching: 5
+teaching: 15
 exercises: 0
 objectives:
 - "Understand what SSH keys can be used for"
@@ -55,15 +55,6 @@ ssh-copy-id $USER@ppi-blogin-a1
 
 This command is used to copy your SSH public key to the authorized_keys file on the specified PPI server, allowing you to authenticate without entering a password. 
 Make sure to replace $USER with your actual username.
-
-## Further reading
-(Guide for Cryptographic Keys)["https://docs.google.com/document/d/15r7pVxQuR2NSJw_CV4uCXhbqZQOpJa1muxvBN8gWRI0/edit"](in Norwegian)
-(man ssh-keygen)["https://linux.die.net/man/1/ssh-keygen"] has good information. In _very_ short:
-- -t gives the type of key to generate
-- -b gives the length of teh key. Longer is mre secure
-- Higher -a makes the key more difficult to brute-force-attack
-- -C is a comment. Good comments are important for good key management! 
-
 
 [Previous slide](README.md)
 [Next slide](02-End.md)
