@@ -16,7 +16,7 @@ Subjects covered:
 - Exporting the key to the PPI system
 
 Target audience: 
-Attendees should have experience with writing formatted text (html, XML, LaTeX or even the command line). 
+Attendees should have experience with the command line 
 
 Number of attendees: 30
 

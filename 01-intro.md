@@ -60,4 +60,4 @@ Make sure to replace $USER with your actual username.
 (Guide for Cryptographic Keys)[https://docs.google.com/document/d/15r7pVxQuR2NSJw_CV4uCXhbqZQOpJa1muxvBN8gWRI0/edit](in Norwegian)
 
 [Previous slide](README.md)
-[Next slide](02-End.md
+[Next slide](02-End.md)
