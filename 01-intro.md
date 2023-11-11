@@ -24,7 +24,7 @@ Both SSH, GPG, and CA keys are key pairs consisting of a private and a public ke
 
 Keys can be generated with different algorithms and lengths, affecting the degree to which an attacker might gain access through brute force code cracking. 
 Additionally, some types of keys can be created with expiration dates to prevent potential harm if their management fails. 
-The use of shared keys versus personal keys can result in a loss of traceability and an increased likelihood of keys being compromised, especially when someone leaves, among other challenges.
+The use of shared keys versus personal keys can result in a loss of traceability and an increased likelihood of keys being compromised.
 
 ## SSH Keys
 
