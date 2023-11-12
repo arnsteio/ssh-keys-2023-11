@@ -1,25 +1,26 @@
-# SSH key miniworkshop, MET Norway, 2023-11-20
+# Bash novice and SSH keys, MET Norway, 2023-11-20
 ---
-Workshop name: SSH keys
+Workshop name: Bash novice and SSH keys
 
 Instructors: Arnstein Orten
 
 Helpers: TBD
 
-Length: 30 minutes
+Length: 3 hours minutes
 
 Description: 
-The course will be given as an add-on to a short version of the standard Software Carpentry Unix course.
+- Shell novice lesson
+- SSH keys
 
 Subjects covered:
-- Making SSH keys
-- Exporting the key to the PPI system
+- Basic usage of the UNIX shell
+- Making SSH keys and exporting them to the PPI system
 
 Target audience: 
-Attendees should have experience with the command line 
+Attendees without good knowledge on the UNIX command line 
 
 Number of attendees: 30
 
-URL to presentation website: <https://arnsteio.github.io/ssh-keys-2023-11/>
+URL to presentation website: <https://arnsteio.github.io/bash-novice-2023-11/>
 
 [Next slide](01-intro.md)
