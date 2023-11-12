@@ -12,7 +12,7 @@ objectives:
 1. [Generally about keys](#generally-about-keys)
 2. [SSH keys](#ssh-keys)
 3. [Copying the key to VGL](#copying-the-key-to-vgl)
-4. [Furter reading](#further-reading)
+4. [Important files](#important-files)
 
 ## Generally about keys
 
@@ -55,6 +55,33 @@ ssh-copy-id $USER@ppi-r8login-a1.int.met.no
 
 This command is used to copy your SSH public key to the authorized_keys file on the specified PPI server, allowing you to authenticate without entering a password. 
 Make sure to replace $USER with your actual username.
+
+## Important files
+
+Your ~/.ssh catalog has your key pair. 
+
+- id_rsa is your private key. *keep it secret, keep it safe!*
+- id_rsa.pub is your public key 
+
+On a server,
+
+- authorized_keys has a copy of your public key
+
+
+> Excercise: Can you find out how many SSH keys you have at the PPI system?
+>
+>> Solution: 
+>>~~~
+>>ssh ppi-r8login-a1.int.met.no
+>>cat .ssh/authorized_keys | wc -l
+>>~~~
+
+> Excercise: If you have more SSH keys than you need, shall we clean the excess ones out?
+>
+>> Solution:                               
+>>Log in on the PPI system and remove unnecessary files from the ~/.ssh/authorized_keys file. 
+>>We have worked a lot with things like this today!
+
 
 [Previous slide](README.md)
 [Next slide](02-End.md)
