@@ -1,36 +1,61 @@
 ---
-title: BASH novice
-teaching: 150
+title: SSH keys
+teaching: 5
 exercises: 0
 objectives:
-- "Understand why learing the UNIX shell is a good idea"
-- "Automating repetitive tasks"
-- "Documenting data maniplulation steps for reproducible reseach"
+- "Understand what SSH keys can be used for"
+- "Setting up a secure SSH key for personal use"
+- "Copying the key to the PPI system"
 ---
-# Introduction to the UNIX shell
+# Introduction to SSH keys
 
-1. [This lesson](#this-lesson)
-2. [Why learn to use the shell?](#why-learn-to.use-the-shell)
+1. [Generally about keys](#generally-about-keys)
+2. [SSH keys](#ssh-keys)
 3. [Copying the key to VGL](#copying-the-key-to-vgl)
 4. [Important files](#important-files)
 
-## This lesson
+## Generally about keys
 
-I will spend somwhat more than two hours on the UNIX shell, basing my teaching on the Software Carpentry [Shell Novice](https://swcarpentry.github.io/shell-novice/) lesson. 
-Ii is unlikely we will get to the end of the lesson, but you may follow though to the end in your own time.
-If you are already familiar with the shell you may wish to go to the [Shell Extras](https://carpentries-incubator.github.io/shell-extras/) lesson instead, and follow that through self-study. 
+A key pair consisting of a private and a public key can be used for authentication, signing/verification, or encryption/decryption. The underlying principle is that:
+- what is encrypted with the public key can only be decrypted with the corresponding private key, and vice versa;
+- what is encrypted with the private key can only be decrypted with the corresponding public key.
 
-At 11:15 I will go through SSH keys and we will all generate an SSH key pair and make sure our public key is uploaded to the PPI machines. 
-This key will also be useful for the Gitlab lesson following this lesson. 
+Both SSH, GPG, and CA keys are key pairs consisting of a private and a public key.
 
-## Shell nowice
-- [Shell Novice](https://swcarpentry.github.io/shell-novice/)
-alternatively, in your own time,
-- [Shell Extras](https://carpentries-incubator.github.io/shell-extras/) 
+Keys can be generated with different algorithms and lengths, affecting the degree to which an attacker might gain access through brute force code cracking. 
+Additionally, some types of keys can be created with expiration dates to prevent potential harm if their management fails. 
+The use of shared keys versus personal keys can result in a loss of traceability and an increased likelihood of keys being compromised, especially when someone leaves, among other challenges.
 
+## SSH Keys
 
-### SSH keys
-[SSH keys](https://arnsteio.github.io/ssh-keys-2023-11/)
+SSH keys are used at MET to authenticate a person or machine to:
+- Read or modify information on a Git service like gitlab.met.no, git.ik.met.no, or github.com
+- Execute commands with limited or extended privileges on a virtual or physical machine
+
+In this course we are concerned with personal keys. 
+
+### Creating a New SSH Key
+
+The recommended method is:
+
+```bash
+ssh-keygen -t rsa -b 4096 -a 250 -C "$USER@$(hostname) $(date)"
+```
+
+Choose a strong password for the private key!
+For added security it is possible to store the key on a physical, secure key, though we will not cover that in this course.
+
+## Copying the key to VGL
+
+To copy a key to PPI, use the following command:
+
+```bash
+ssh-copy-id $USER@ppi-blogin-a1
+```
+
+This command is used to copy your SSH public key to the authorized_keys file on the specified PPI server, allowing you to authenticate without entering a password. 
+Make sure to replace $USER with your actual username.
+
 
 ## Important files
 
@@ -58,5 +83,5 @@ On a server,
 >>Log in on the PPI system and remove unnecessary files from the ~/.ssh/authorized_keys file. 
 >>We have worked a lot with things like this today!
 
-
 [Previous slide](README.md)
+[Next slide](02-End.md)
