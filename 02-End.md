@@ -7,7 +7,7 @@
     - -b gives the length of the key. Longer is more secure
     - Higher -a makes the key more difficult to brute-force-attack
     - -C gives a comment. Good comments are important for good key management!
-
+- [MET-specific SSH key documentation](https://it.pages.met.no/sd/klient/linux/brukerdokumentasjon/jammy/ssh-key.html)
 ---
 
 [Previous slide](01-intro.md)
