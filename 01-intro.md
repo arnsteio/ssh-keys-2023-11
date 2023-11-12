@@ -83,5 +83,7 @@ On a server,
 >>Log in on the PPI system and remove unnecessary files from the ~/.ssh/authorized_keys file. 
 >>We have worked a lot with things like this today!
 
+---
+
 [Previous slide](README.md)
 [Next slide](02-End.md)

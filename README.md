@@ -22,4 +22,6 @@ Number of attendees: 30
 
 URL to presentation website: <https://arnsteio.github.io/ssh-keys-2023-11/>
 
+---
+
 [Next slide](01-intro.md)
