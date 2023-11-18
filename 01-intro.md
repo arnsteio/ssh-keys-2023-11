@@ -50,7 +50,7 @@ For added security it is possible to store the key on a physical, secure key, th
 To copy a key to PPI, use the following command:
 
 ```bash
-ssh-copy-id $USER@ppi-blogin-a1
+ssh-copy-id $USER@ppi-r8login-a1.int.met.no
 ```
 
 This command is used to copy your SSH public key to the authorized_keys file on the specified PPI server, allowing you to authenticate without entering a password. 
