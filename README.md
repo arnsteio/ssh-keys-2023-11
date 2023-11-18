@@ -4,7 +4,7 @@ Workshop name: SSH keys
 
 Instructors: Arnstein Orten
 
-Helpers: TBD
+Helpers: Arnulf Heimsbakk
 
 Length: 30 minutes
 
