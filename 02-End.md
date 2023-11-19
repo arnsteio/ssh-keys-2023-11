@@ -1,7 +1,7 @@
 # SSH keys
 
 ## Further reading
-- [Guide for Cryptographic Keys](https://docs.google.com/document/d/15r7pVxQuR2NSJw_CV4uCXhbqZQOpJa1muxvBN8gWRI0/edit)(in Norwegian)
+- [Guide for Cryptographic Keys](https://docs.google.com/document/d/15r7pVxQuR2NSJw_CV4uCXhbqZQOpJa1muxvBN8gWRI0/edit) (in Norwegian)
 - [man ssh-keygen](https://linux.die.net/man/1/ssh-keygen) has good information. In _very_ short:
     - -t gives the type of key to generate
     - -b gives the length of the key. Longer is more secure
