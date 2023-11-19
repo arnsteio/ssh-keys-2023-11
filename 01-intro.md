@@ -61,7 +61,7 @@ Make sure to replace $USER with your actual username.
 
 Your ~/.ssh catalog has your key pair. 
 
-- id_rsa is your private key. *keep it secret, keep it safe!*
+- id_rsa is your private key. *Keep it secret, keep it safe!*
 - id_rsa.pub is your public key 
 
 On a server,
